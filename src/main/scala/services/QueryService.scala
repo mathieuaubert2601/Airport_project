@@ -32,7 +32,7 @@ object QueryService {
     country match {
       case Some(c) =>
         // Filtre les aéroports qui appartiennent à ce pays (en utilisant le code ISO du pays)
-        val countryAirports = airports.filter(_.isoCountry == c.code)
+        val countryAirports = airports.filter(_.isoCountry == c.code).sortBy(_.name)
 
         // Pour chaque aéroport trouvé, associe les pistes correspondantes (en utilisant l'ID de l'aéroport)
         countryAirports.map(a => (a, runways.filter(_.airportRef == a.id)))

@@ -10,18 +10,15 @@ import services.{QueryService, ReportService, CsvParser}
 import models.{Airport, Runway, Country}
 
 object GUIApp extends JFXApp {
-  // Charge les données depuis les fichiers CSV
   val airports = CsvParser.parseAirports("data/airports.csv")
   val runways = CsvParser.parseRunways("data/runways.csv")
   val countries = CsvParser.parseCountries("data/countries.csv")
 
-  // Vérifie si les données ont été chargées correctement
   if (airports.isEmpty || runways.isEmpty || countries.isEmpty) {
     println("Erreur : Impossible de charger les fichiers CSV. Vérifiez les chemins et le format des fichiers.")
     System.exit(1)
   }
 
-  // Déclare les variables pour les zones de texte
   private val resultArea1 = new TextArea {
     editable = false
     wrapText = true
@@ -48,14 +45,12 @@ object GUIApp extends JFXApp {
     minHeight = 400
   }
 
-  // Crée la fenêtre principale
   stage = new PrimaryStage {
     title = "Airport Data Explorer"
     scene = new Scene(1000, 750) {
       root = new BorderPane {
         padding = Insets(20)
 
-        // Titre
         top = new Label {
           text = "Airport Data Explorer"
           style = "-fx-font-size: 20px; -fx-font-weight: bold;"
@@ -72,7 +67,7 @@ object GUIApp extends JFXApp {
             reportCenterBox.managed = true
             queryCenterBox.visible = false
             queryCenterBox.managed = false
-            singleResultArea.text = "" // Efface les résultats précédents
+            singleResultArea.text = ""
           }
         }
 
@@ -90,14 +85,11 @@ object GUIApp extends JFXApp {
           }
         }
 
-
-        // Champ de saisie pour Report
         val queryInput = new TextField {
           promptText = "Enter country name or code"
           visible = false
         }
 
-        // Bouton pour exécuter Report
         val executeReportButton = new Button("Execute Report") {
           onAction = _ => {
             val input = queryInput.text.value
@@ -111,23 +103,20 @@ object GUIApp extends JFXApp {
           visible = false
         }
 
-        // Layout pour les boutons et la barre de saisie
         val topBox = new HBox {
           spacing = 10
           alignment = Pos.Center
           children = Seq(reportButton, queryButton, queryInput, executeReportButton)
         }
 
-        // Layout pour Report
         val reportCenterBox = new VBox {
           spacing = 10
           children = Seq(new Label("Report Data:"),
           singleResultArea)
           visible = false
-          managed = false // Empêche de réserver de l’espace quand caché
+          managed = false
         }
 
-        // Layout pour Query
         val queryCenterBox = new VBox {
           spacing = 10
           children = Seq(
@@ -139,11 +128,9 @@ object GUIApp extends JFXApp {
             resultArea3
           )
           visible = false
-          managed = false // Empêche de réserver de l’espace quand caché
+          managed = false
         }
 
-
-        // Ajoute les éléments à la fenêtre
         top = topBox
         center = new VBox {
           spacing = 10
@@ -153,11 +140,7 @@ object GUIApp extends JFXApp {
     }
   }
 
-  /**
-   * Affiche les résultats de Query dans les zones de texte.
-   */
   private def displayQueryResults(): Unit = {
-    // Affiche les 10 pays avec le plus grand nombre d'aéroports
     val topCountries = ReportService.topCountriesByAirportCount(airports, countries, 10)
     val lessCountries = ReportService.lessCountriesByAirportCount(airports,countries,10)
     resultArea1.text =
@@ -166,12 +149,10 @@ object GUIApp extends JFXApp {
       "\n\nTop 10 countries with less airports:\n\n" +
       lessCountries.map { case (country, count) => s"${country.name}: $count" }.mkString("\n")
 
-    // Affiche les types de surfaces de pistes par pays
     val surfaces = ReportService.runwaySurfacesPerCountry(runways, airports, countries)
     resultArea2.text =
       surfaces.map { case (country, surfaces) => s"$country: ${surfaces.mkString(", ")}" }.mkString("\n")
 
-    // Affiche les 10 identifiants de pistes les plus courants
     val topRunwayIdents = ReportService.topRunwayIdentifications(runways, 10)
     resultArea3.text =
       topRunwayIdents.mkString("\n")

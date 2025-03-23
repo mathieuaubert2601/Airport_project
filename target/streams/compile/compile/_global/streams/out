@@ -1,2 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 16.0.0-R23); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\maube\Desktop\Airport_project\src\main\scala\services\QueryService.scala:29:3: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

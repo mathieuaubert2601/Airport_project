@@ -1,0 +1,41 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\airportproject_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models\Runway.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\models\Runway.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\CsvParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\CsvParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\CsvParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\CsvParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\QueryService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\QueryService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\QueryService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\QueryService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\ReportService$$anonfun$lessCountriesByAirportCount$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\ReportService$$anonfun$lessCountriesByAirportCount$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\ReportService$$anonfun$topCountriesByAirportCount$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\ReportService$$anonfun$topCountriesByAirportCount$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\ReportService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\ReportService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	services\ReportService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\services\ReportService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ui[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\ui[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ui\CommandLineUI$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\ui\CommandLineUI$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ui\CommandLineUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\maube\OneDrive - Groupe INSEEC (POCE)\ECE\ING4\Semestre 2\Functional Programming\project\Project_v2\project\target\scala-2.13\classes\ui\CommandLineUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

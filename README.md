@@ -13,7 +13,6 @@ Bienvenue sur le projet **Airport Project**, une application conçue pour illust
 - [Structure du projet](#structure-du-projet)
 - [Installation & Prérequis](#installation--prérequis)
 - [Utilisation](#utilisation)
-- [Auteurs](#auteurs)
 
 ---
 
@@ -67,3 +66,4 @@ sbt run
 ```bash
 sbt test
 ```
+
